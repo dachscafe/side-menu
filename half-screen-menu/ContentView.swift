@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    /// メニューの開閉
+    @State var isMenuOpen = false
+    @State var isAlert = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            ZStack {
+                Text("ContentView")
+                MenuView(isOpen: $isMenuOpen)
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        /// isMenuOpenの変化にアニメーションをつける
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            isMenuOpen.toggle()
+                        }
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 

@@ -11,6 +11,8 @@
 		14F1606629F69B3000D0DF63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F1606529F69B3000D0DF63 /* ContentView.swift */; };
 		14F1606829F69B3100D0DF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F1606729F69B3100D0DF63 /* Assets.xcassets */; };
 		14F1606B29F69B3100D0DF63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F1606A29F69B3100D0DF63 /* Preview Assets.xcassets */; };
+		14F1607229F69BE600D0DF63 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F1607129F69BE600D0DF63 /* MenuView.swift */; };
+		14F1607429F6A34600D0DF63 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 14F1607329F6A34600D0DF63 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		14F1606529F69B3000D0DF63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14F1606729F69B3100D0DF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F1606A29F69B3100D0DF63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14F1607129F69BE600D0DF63 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		14F1607329F6A34600D0DF63 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				14F1606329F69B3000D0DF63 /* half_screen_menuApp.swift */,
+				14F1607129F69BE600D0DF63 /* MenuView.swift */,
 				14F1606529F69B3000D0DF63 /* ContentView.swift */,
 				14F1606729F69B3100D0DF63 /* Assets.xcassets */,
 				14F1606929F69B3100D0DF63 /* Preview Content */,
+				14F1607329F6A34600D0DF63 /* README.md */,
 			);
 			path = "half-screen-menu";
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F1607429F6A34600D0DF63 /* README.md in Resources */,
 				14F1606B29F69B3100D0DF63 /* Preview Assets.xcassets in Resources */,
 				14F1606829F69B3100D0DF63 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F1606629F69B3000D0DF63 /* ContentView.swift in Sources */,
+				14F1607229F69BE600D0DF63 /* MenuView.swift in Sources */,
 				14F1606429F69B3000D0DF63 /* half_screen_menuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
