@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MenuView: View {
-    
     /// メニュー開閉
     @Binding var isOpen: Bool
     /// iPhoneの幅
@@ -42,22 +41,22 @@ struct MenuView: View {
                         }
                     }
                 }
+                /// 開発者とか入れるとそれっぽい
                 VStack {
                     Spacer()
                     Text("developed by")
                         .font(.footnote)
                     Text("Cafe")
                         .font(.footnote)
-
                 }
                 .foregroundColor(.secondary)
+                .padding()
             }
             /// 画面幅の1/4だけ右側を開ける
             .padding(.trailing, maxWidth/4)
             /// isOpenで、そのままの位置か、画面幅だけ右にズレるかを決める
             .offset(x: isOpen ? 0 : -maxWidth)
         }
-        
     }
 }
 

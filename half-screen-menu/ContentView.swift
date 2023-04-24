@@ -10,26 +10,25 @@ import SwiftUI
 struct ContentView: View {
     /// メニューの開閉
     @State var isMenuOpen = false
-    @State var isAlert = false
     
     var body: some View {
-        NavigationStack {
-            ZStack {
+        ZStack {
+            NavigationStack {
                 Text("ContentView")
-                MenuView(isOpen: $isMenuOpen)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        /// isMenuOpenの変化にアニメーションをつける
-                        withAnimation(.easeInOut(duration: 0.3)) {
-                            isMenuOpen.toggle()
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button {
+                                /// isMenuOpenの変化にアニメーションをつける
+                                withAnimation(.easeInOut(duration: 0.3)) {
+                                    isMenuOpen.toggle()
+                                }
+                            } label: {
+                                Image(systemName: "line.3.horizontal")
+                            }
                         }
-                    } label: {
-                        Image(systemName: "line.3.horizontal")
                     }
-                }
             }
+            MenuView(isOpen: $isMenuOpen)
         }
     }
 }
